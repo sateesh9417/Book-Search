@@ -1,0 +1,39 @@
+.container{
+    max-width: 1300px;
+    margin:0 auto;
+}
+div ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 45px auto;
+    width: 1100px;
+}
+.list-item a{
+    text-decoration: none;
+    color: rgb(4, 3, 68);
+    padding: 12px 20px;
+    border-radius: 7px;
+    background-color: rgb(240, 134, 13);
+    font-weight: bold;
+    box-shadow: 2px 3px 4px 1px #555;
+}
+.list-item a:hover{
+    background-color: rgb(241, 7, 222);
+    color: white;
+}
+section{
+    width: 1200px;
+    margin: auto;
+}
+table{
+   box-shadow: 2px 2px 10px 1px rgb(167, 165, 166);
+}
+table th{
+    font-weight: bold;
+    padding: 20px;
+}
+table td{
+    padding: 20px;
+    font-weight: 500;
+}

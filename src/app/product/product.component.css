@@ -1,0 +1,22 @@
+.form-group{
+    width: 350px;
+    margin: auto;
+}
+input{
+    border: 2px solid rgb(85, 82, 82) !important;
+    border-radius: 5px;
+}
+button i{
+padding: 11px;
+}
+table{
+    box-shadow: 2px 2px 10px 1px rgb(24, 10, 218);
+}
+table th,td{
+    padding: 15px;
+    font-weight: bold;
+}
+table img{
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 1px rgb(5, 4, 117);
+}

@@ -1,0 +1,29 @@
+<div class="container col-9 mx-auto mt-3">
+    <div class="form-group mb-3">
+            <input type="text" class="p-2 border" id="search" [(ngModel)]="search" size="33" placeholder="search here...">
+            <button class="rounded"><a  class="search-icon"><i class="fa fa-search"></i></a></button>
+    </div>
+<div>
+    <table class="table table-bordered table-hover text-center">
+        <thead class="bg-dark text-light">
+            <tr>
+                <th>SL.No</th>
+                <th>Product Name</th>
+                <th>Image</th>
+                <th>Price</th>
+                <th>Review</th>
+            </tr>
+        </thead>
+        <tbody class="bg-info">
+            <tr *ngFor="let product of products | filterProduct:search">
+                <td>{{product.SlNo}}</td>
+                <td>{{product.name}}</td>
+                <td><img [src]="product.image" width="150px" height="150px" alt="image"></td>
+                <td>{{product.price}}</td>
+                <td>{{product.review}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>

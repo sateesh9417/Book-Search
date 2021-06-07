@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="lists">
+        <ul class="list-group list-unstyled">
+            <li class="list-item btn"><a id="addB"  href="">Add-Book</a></li>
+            <li class="list-item btn"><a id="addA"  href="">Add-Author</a></li>
+            <li class="list-item btn"><a id="addP"  href="">Add-NOP</a></li>
+            <li class="list-item btn"><a id="addR"  href="">Add-Reviews</a></li>
+            <li class="list-item btn"><a id="addC"  href="">Add-Price</a></li>
+        </ul>
+    </div>
+</div>
+
+    <section>
+        <table class="table table-bordered table-responsive table-hover">
+            <thead class="bg-dark text-light text-center">
+                <tr>
+                    <th>Name of the Book</th>
+                    <th>Author Name</th>
+                    <th>No of Pages</th>
+                    <th>Reviews</th>
+                    <th><i class="fa fa-rupee"></i>Price</th>
+                </tr>
+            </thead>
+            <tbody class="text-center bg-info" id="tb">
+                <!-- <tr>
+                    <td>Wings of Fire</td>
+                    <td>A.P.J Abdul Kalam,<br>Arun Tiwari</td>
+                    <td>180</td>
+                    <td>Its awesome book(4.8)</td>
+                    <td>Rs 250/-</td>
+                </tr>
+                <tr>
+                    <td>Naa Jeevana Gamanam</td>
+                    <td>A.P.J Abdul Kalam</td>
+                    <td>96</td>
+                    <td>Its really readable book(4.8)</td>
+                    <td>Rs 175/-</td>
+                </tr>
+                <tr>
+                    <td>Inspiring Thoughts</td>
+                    <td>A.P.J Abdul Kalam</td>
+                    <td>104</td>
+                    <td>Its really awesome thoughts(4.3)</td>
+                    <td>Rs 128/-</td>
+                </tr> -->
+                <tr *ngFor="let book of books">
+                    <td>{{book.Book}}</td>
+                    <td>{{book.Author}}</td>
+                    <td>{{book.pages}}</td>
+                    <td>{{book.Review}}</td>
+                    <td>{{book.Price}}</td>
+                    <!-- <td id="bb"></td>
+                    <td id="bA"></td>
+                    <td id="bP"></td>
+                    <td id="bR"></td>
+                    <td id="bC"></td> -->
+                </tr>
+            </tbody>
+        </table>
+    </section>
+

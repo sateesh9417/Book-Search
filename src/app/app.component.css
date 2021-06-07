@@ -1,0 +1,26 @@
+
+.container{
+    max-width: 1300px;
+}
+.navbar{
+    background: linear-gradient(to top right,rgb(55, 168, 3), rgb(197, 77, 245));
+}
+.mx-auto{
+    margin-right:25px !important;
+}
+.navbar a{
+    color: rgb(252, 252, 253);
+    font-weight: bold;
+    font-size: 20px;
+    padding-right:25px ;
+}
+.navbar a:hover{
+    color: yellow;
+}
+.navbar a i{
+    padding-right: 5px;
+}
+.navbar .brand{
+    font-size: 25px;
+    padding-left: 30px;
+}

@@ -1,0 +1,14 @@
+<h1 class="text-center text-warning pt-5">This is About-Us Page</h1>
+
+<h1 class="text-center text-success pt-3">ng-switch structural directive</h1>
+<div [ngSwitch]="color">
+        <h1 *ngSwitchCase="'sky-blue'" class="text-center text-info pt-3">This is sky-blue</h1>
+        <h1 *ngSwitchCase="'green'" class="text-center text-success pt-3">This is green</h1>
+        <h1 *ngSwitchCase="'blue'" class="text-center text-primary pt-3">This is blue</h1>
+        <h1 *ngSwitchDefault class="text-center text-danger pt-3">color is not matched</h1>
+</div>
+
+<h1 appCustomDirective>This is Custom Directive element</h1>
+
+
+
